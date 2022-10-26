@@ -61,6 +61,16 @@ void hang_man(int tries,string answer){
     }
 }
 int main(){
+  const char *longString = R""""( _
+| |
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |
+                   |___/
+)"""";
+  cout << longString << endl;
    string words [] {"assam","bihar","chattisgarh","goa","gujarat","haryana","jharkhand","karnataka","kerala","maharashtra","manipur",
    "meghalaya","mizoram","nagaland","odisha","punjab","rajasthan","sikkim","telangana","tripura","uttarakhand","uttarpradesh","west","videotape",
    "youtube","weapon","guns","rainbow","tortoise","pencil","pen","eraser","cake","sweet","school","hospital","university","teacher","science",
@@ -110,8 +120,7 @@ int main(){
 }else{
     cout << "WRONG INPUT" << endl;
 }
-
-
+    
 }
 return 0;
 }
